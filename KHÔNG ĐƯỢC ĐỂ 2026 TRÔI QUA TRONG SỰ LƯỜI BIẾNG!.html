@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TỔNG ĐỘNG VIÊN 2026 - KHÁNH BẰNG</title>
+    <style>
+        :root {
+            --army-green: #4b5320;
+            --alert-gold: #ffd700;
+            --danger-red: #ff3131;
+            --bg-dark: #121212;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-dark);
+            color: white;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            border: 12px solid var(--army-green);
+        }
+
+        .hq-container {
+            width: 95%;
+            max-width: 900px;
+            background: #1c1c1c;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 50px rgba(75, 83, 32, 0.5);
+            text-align: center;
+        }
+
+        .header-section {
+            border-bottom: 3px solid var(--alert-gold);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header-section h1 {
+            font-size: 2.5em;
+            letter-spacing: 5px;
+            color: var(--alert-gold);
+            margin: 0;
+        }
+
+        .alliance-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .alliance-card {
+            background: #2a2a2a;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: left;
+            border-left: 5px solid var(--army-green);
+        }
+
+        .alliance-card b { color: var(--alert-gold); }
+        .alliance-card p { font-size: 0.9em; margin-top: 5px; font-style: italic; }
+
+        .shame-zone {
+            background: #000;
+            padding: 20px;
+            border: 2px dashed var(--danger-red);
+            margin: 20px 0;
+        }
+
+        .shame-zone img {
+            width: 100%;
+            opacity: 0.6;
+            filter: contrast(1.2);
+        }
+
+        .urgent-call {
+            background: var(--danger-red);
+            color: white;
+            font-weight: bold;
+            padding: 20px;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0.5; }
+        }
+
+        .btn-action {
+            display: block;
+            width: 100%;
+            padding: 25px;
+            margin-top: 30px;
+            background: var(--alert-gold);
+            color: black;
+            font-size: 1.8em;
+            font-weight: 900;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .footer-names {
+            margin-top: 30px;
+            font-size: 0.7em;
+            color: #777;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hq-container">
+    <div class="header-section">
+        <h1>MỆNH LỆNH TỐI CAO</h1>
+        <p>Đối tượng: NGUYỄN KHÁNH BẰNG | Ngày: 01/03/2026</p>
+    </div>
+
+    <div class="alliance-grid">
+        <div class="alliance-card">
+            <b>Minh, Nam, Dũng & Việt:</b>
+            <p>"Bằng ơi, tỉnh dậy đi! Đừng để anh em phải 'gánh' danh tiếng cho ông mãi. Code ngay đi!"</p>
+        </div>
+        <div class="alliance-card">
+            <b>Em Bống, Vân Hà, Dế & Thắng béo:</b>
+            <p>"Anh Bằng ơi dậy đi code thôi! Tụi em đang nhìn anh làm gương đó nha, đừng có lười!"</p>
+        </div>
+        <div class="alliance-card">
+            <b>Hương Trà, Quang Huy & An:</b>
+            <p>"Kỷ luật thép đâu rồi? 2026 là năm bùng nổ mà sao lại nằm im thế này?"</p>
+        </div>
+        <div class="alliance-card">
+            <b>Đặng Trần Tùng & Luyện Quang Kiên:</b>
+            <p>"8.5 IELTS cũng không cứu được bảng thành tích 0/4 này đâu. Practice makes perfect, Bang!"</p>
+        </div>
+    </div>
+
+    <div class="shame-zone">
+        <img src="Unparticipated contests.png" alt="Thành tích trống">
+        <p style="color: var(--danger-red); margin-top: 10px; font-weight: bold;">CẢNH BÁO: CHƯA CÓ SỰ THAY ĐỔI TRONG HÔM NAY!</p>
+    </div>
+
+    <div class="urgent-call">
+        BỐN PHƯƠNG TÁM HƯỚNG ĐANG ĐỐC THÚC - DẬY VIRTUAL CONTEST NGAY!
+    </div>
+
+    <button class="btn-action" onclick="window.location.href='https://leetcode.com/contest/'">
+        THỰC THI KỶ LUẬT THÉP 2026
+    </button>
+
+    <div class="footer-names">
+        Giám sát bởi: Đăng Quân, Đức Minh, Phạm Đức Minh, Hoàng Minh Quân, Hồng Quân, Đức Đặng, Nguyễn Mạnh Hùng, Đặng Hồng Hạnh, Trần Khôi Nguyên cùng hơn 100 cao thủ quốc tế và các Shark.
+    </div>
+</div>
+
+</body>
+</html>

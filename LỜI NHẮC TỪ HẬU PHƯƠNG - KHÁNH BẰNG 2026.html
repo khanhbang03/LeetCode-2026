@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LỜI NHẮC TỪ HẬU PHƯƠNG - KHÁNH BẰNG 2026</title>
+    <style>
+        :root {
+            --soft-purple: #9b59b6;
+            --rose: #e91e63;
+            --teal: #1abc9c;
+            --bg-light: #fdfcfd;
+            --text-dark: #2c3e50;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: var(--text-dark);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .home-container {
+            width: 90%;
+            max-width: 750px;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border-top: 10px solid var(--rose);
+        }
+
+        .header-soft {
+            padding: 30px;
+            text-align: center;
+            background: linear-gradient(to right, #ffffff, #fff5f7);
+        }
+
+        .header-soft h1 {
+            color: var(--rose);
+            font-size: 1.8em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .ladies-message {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            padding: 20px;
+            background: #fff;
+        }
+
+        .card-msg {
+            padding: 15px;
+            border-radius: 12px;
+            font-size: 0.95em;
+            line-height: 1.5;
+            border: 1px solid #f0f0f0;
+        }
+
+        .card-msg.mentor { border-left: 5px solid var(--soft-purple); background: #f9f4fb; }
+        .card-msg.friend { border-left: 5px solid var(--teal); background: #f4fbf9; }
+
+        .card-msg b { color: #333; display: block; margin-bottom: 5px; }
+
+        .evidence-section {
+            padding: 20px;
+            text-align: center;
+            background: #fafafa;
+        }
+
+        .evidence-section img {
+            width: 90%;
+            border-radius: 10px;
+            filter: sepia(20%);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .final-countdown {
+            background: var(--rose);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .btn-action {
+            display: block;
+            width: 80%;
+            margin: 20px auto;
+            padding: 18px;
+            background: var(--text-dark);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: 0.3s;
+        }
+
+        .btn-action:hover {
+            background: #000;
+            transform: scale(1.02);
+        }
+
+        .footer-note {
+            padding: 15px;
+            font-size: 0.75em;
+            text-align: center;
+            color: #999;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+<div class="home-container">
+    <div class="header-soft">
+        <h1>Niềm Tin & Kỳ Vọng</h1>
+        <p>Gửi Nguyễn Khánh Bằng</p>
+    </div>
+
+    <div class="final-countdown">
+        10 PHÚT CUỐI CÙNG: DẬY ĐỂ THAY ĐỔI, ĐỪNG DẬY ĐỂ TIẾC NUỐI!
+    </div>
+
+    <div class="ladies-message">
+        <div class="card-msg mentor">
+            <b>Chị Annie Ngô & Cô Hà Dung</b>
+            "Sự nghiệp không xây bằng những lần bỏ lỡ. Chúng tôi tin Bằng có thể làm tốt hơn thế này. Đừng để lãng phí thêm một phút nào nữa!"
+        </div>
+        <div class="card-msg friend">
+            <b>Phương Anh, Diệu Linh & Đông Thy</b>
+            "Tụi mình đều đang chờ tin vui từ Bằng đó. 10 phút vẫn đủ để làm nên điều khác biệt mà. Cố lên, dậy code thôi Bằng ơi!"
+        </div>
+    </div>
+
+    <div class="evidence-section">
+        <p style="font-size: 0.9em; color: #7f8c8d;">Bức ảnh này không xứng đáng với nỗ lực của bạn:</p>
+        <img src="Unparticipated contests.png" alt="Thành tích cần thay đổi">
+    </div>
+
+    <a href="https://leetcode.com/contest/" class="btn-action" onclick="alert('Mọi người đang mỉm cười chờ đợi bạn. Vào làm ngay 1 bài Easy nào!')">
+        CONTEST NGAY VÌ NHỮNG NGƯỜI THÂN YÊU
+    </a>
+
+    <div class="footer-note">
+        Đồng đốc thúc bởi: Hội đồng Cao thủ quốc tế, Showbiz Việt và 35+ anh em cộng sự.
+    </div>
+</div>
+
+</body>
+</html>

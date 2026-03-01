@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE FINAL JUDGMENT - KHÁNH BẰNG 2026</title>
+    <style>
+        :root {
+            --god-rank: #ff4500;
+            --legend-rank: #aa0000;
+            --expert-blue: #1e90ff;
+            --bg-black: #000000;
+        }
+
+        body {
+            font-family: 'Consolas', monospace;
+            background-color: var(--bg-black);
+            color: #ffffff;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            border: 10px solid var(--legend-rank);
+        }
+
+        .judgment-hall {
+            width: 95%;
+            max-width: 900px;
+            padding: 40px;
+            background: linear-gradient(180deg, #1a1a1a 0%, #000000 100%);
+            text-align: center;
+            box-shadow: 0 0 150px rgba(255, 69, 0, 0.3);
+        }
+
+        .tourist-notice {
+            border: 2px solid var(--god-rank);
+            padding: 20px;
+            margin-bottom: 30px;
+            background: rgba(255, 69, 0, 0.1);
+        }
+
+        .tourist-notice h1 {
+            color: var(--god-rank);
+            font-size: 2.5em;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .council-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .judge-card {
+            background: #111;
+            padding: 15px;
+            border-bottom: 3px solid var(--expert-blue);
+            font-size: 0.85em;
+        }
+
+        .judge-card h3 { color: var(--expert-blue); margin: 0 0 10px 0; }
+
+        .shame-evidence {
+            margin: 30px 0;
+            position: relative;
+        }
+
+        .shame-evidence img {
+            width: 100%;
+            filter: grayscale(1) brightness(0.5);
+            border: 1px solid #444;
+        }
+
+        .verdict {
+            font-size: 1.5em;
+            color: var(--legend-rank);
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 20px 0;
+            padding: 15px;
+            border: 2px dashed var(--legend-rank);
+        }
+
+        .btn-redo {
+            display: block;
+            width: 100%;
+            padding: 20px;
+            background: var(--god-rank);
+            color: white;
+            font-weight: bold;
+            font-size: 1.5em;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn-redo:hover {
+            background: #ff6347;
+            box-shadow: 0 0 30px var(--god-rank);
+        }
+
+        .footer-list {
+            margin-top: 30px;
+            font-size: 0.65em;
+            color: #444;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<div class="judgment-hall">
+    <div class="tourist-notice">
+        <h1>GENNADY KOROTKEVICH IS WATCHING</h1>
+        <p>"Gennady doesn't miss contests. Why do you, Bang?"</p>
+    </div>
+
+    <div class="council-grid">
+        <div class="judge-card">
+            <h3>Anh Chung & Anh Thái Vũ</h3>
+            <p>"VNOI và cộng đồng CP Việt Nam không thể chấp nhận sự hời hợt này. Bằng phải xem lại mình!"</p>
+        </div>
+        <div class="judge-card">
+            <h3>Quỳnh Nguyễn & thuydungsa</h3>
+            <p>"Tụi mình đã thức cùng Bằng đến tận phút chót, nhưng kết quả vẫn là 0/4. Thất vọng quá!"</p>
+        </div>
+        <div class="judge-card">
+            <h3>N.M. Casey & Việt Anh</h3>
+            <p>"International standards require 100% attendance. You failed the mission today, Bang."</p>
+        </div>
+        <div class="judge-card">
+            <h3>Lê Thanh Bắc & Thái Sơn</h3>
+            <p>"Đừng để tài năng ngủ quên. Sáng nay là một bài học đắt giá về kỷ luật thép."</p>
+        </div>
+    </div>
+
+    <div class="shame-evidence">
+        <img src="Unparticipated contests.png" alt="Thất bại kỷ luật">
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: red; font-size: 4em; font-weight: 900; opacity: 0.8;">MISSED</div>
+    </div>
+
+    <div class="verdict">
+        BẢN ÁN: PHẢI VIRTUAL CONTEST NGAY LẬP TỨC!
+    </div>
+
+    <a href="https://leetcode.com/contest/" class="btn-redo" onclick="alert('Tourist đang đợi xem kết quả Virtual Contest của bạn. Làm lại ngay, không được nghỉ!')">
+        LÀM VIRTUAL CONTEST ĐỂ CHUỘC LỖI
+    </a>
+
+    <div class="footer-list">
+        GIÁM SÁT BỞI TOÀN BỘ LIÊN MINH (70+ MEMBERS): Hiển, Thảo, Eunjeong, Mehta, Thầy Công, Thầy Phương, Cô An An, Chị Annie, Anh Hạnh, Sơn Tùng M-TP, HIEUTHUHAI...
+    </div>
+</div>
+
+</body>
+</html>

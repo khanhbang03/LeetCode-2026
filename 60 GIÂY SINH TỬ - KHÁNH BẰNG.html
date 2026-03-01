@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>60 GIÂY SINH TỬ - KHÁNH BẰNG</title>
+    <style>
+        :root {
+            --emergency-red: #ff0000;
+            --global-blue: #1e3a8a;
+            --final-black: #000000;
+            --neon-green: #39ff14;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: var(--final-black);
+            color: white;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .final-contain {
+            width: 95%;
+            max-width: 800px;
+            border: 5px solid var(--emergency-red);
+            padding: 30px;
+            box-shadow: 0 0 100px var(--emergency-red);
+            animation: glitch 0.2s infinite;
+        }
+
+        @keyframes glitch {
+            0% { transform: translate(0); }
+            50% { transform: translate(-2px, 2px); border-color: white; }
+            100% { transform: translate(0); }
+        }
+
+        .countdown {
+            font-size: 6em;
+            font-weight: bold;
+            color: var(--emergency-red);
+            margin: 0;
+        }
+
+        .intl-observers {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .observer-box {
+            background: #111;
+            padding: 10px;
+            border: 1px solid #333;
+        }
+
+        .observer-box h4 {
+            color: var(--neon-green);
+            margin: 0 0 5px 0;
+            font-size: 0.9em;
+        }
+
+        .observer-box p {
+            font-size: 0.8em;
+            margin: 0;
+            color: #ccc;
+        }
+
+        .shame-evidence img {
+            width: 100%;
+            max-width: 450px;
+            opacity: 0.5;
+            filter: grayscale(1);
+        }
+
+        .btn-final {
+            display: block;
+            width: 100%;
+            padding: 20px;
+            background: var(--neon-green);
+            color: black;
+            font-weight: 900;
+            font-size: 1.5em;
+            text-decoration: none;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .last-warning {
+            font-size: 1.2em;
+            color: yellow;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="final-contain">
+    <h2 style="margin: 0;">FINAL MINUTE WARNING</h2>
+    <div class="countdown">60s</div>
+
+    <div class="intl-observers">
+        <div class="observer-box">
+            <h4>Hiển Phạm & Chu Thanh Thảo</h4>
+            <p>"Bằng ơi, danh dự của team đang nằm trong tay ông. 1 phút cũng phải nộp bài!"</p>
+        </div>
+        <div class="observer-box">
+            <h4>Eunjeong Cho (Korea)</h4>
+            <p>"Bang-ssi, pallippalli! (Nhanh lên!) Don't let this chance slip away!"</p>
+        </div>
+        <div class="observer-box">
+            <h4>Tsevelsuren & Bat Erdene</h4>
+            <p>"The spirit of the steppe never quits. Submit your code now!"</p>
+        </div>
+        <div class="observer-box">
+            <h4>Khangai Shirchin</h4>
+            <p>"Speed and discipline. Show us what you've got in these last seconds!"</p>
+        </div>
+    </div>
+
+    <div class="shame-evidence">
+        <img src="Unparticipated contests.png" alt="No more 0/4">
+    </div>
+
+    <div class="last-warning">
+        KHÁNH BẰNG! HỘI ĐỒNG VIỆT - HÀN - MÔNG CỔ ĐANG ĐỢI!
+    </div>
+
+    <a href="https://leetcode.com/contest/" class="btn-final" onclick="alert('CHẠY NGAY ĐI TRƯỚC KHI 60 GIÂY KẾT THÚC!')">
+        NỘP BÀI NGAY (SUBMIT NOW)
+    </a>
+
+    <p style="font-size: 0.6em; margin-top: 20px; color: #444;">
+        Giám sát tổng thể: Thầy Công, Thầy Phương, Cô An An, Thầy Abhijit, Anh Bằng, Minh (x2), Trinh, Tiến, và hơn 60 cộng sự toàn cầu.
+    </p>
+</div>
+
+</body>
+</html>

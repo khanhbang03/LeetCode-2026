@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIỆT ĐỘI ÁP GIẢI TẠI CHỖ - KHÁNH BẰNG 2026</title>
+    <style>
+        :root {
+            --dark: #0a0a0a;
+            --panel: #161b22;
+            --warning: #f85149;
+            --success: #238636;
+            --accent: #79c0ff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--dark);
+            color: #c9d1d9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .bunker {
+            width: 90%;
+            max-width: 700px;
+            background: var(--panel);
+            border: 3px solid var(--warning);
+            border-radius: 20px;
+            padding: 30px;
+            position: relative;
+            box-shadow: 0 0 100px rgba(248, 81, 73, 0.1);
+        }
+
+        .status-bar {
+            background: var(--warning);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: 900;
+            font-size: 1.4em;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            animation: shake 0.5s infinite;
+        }
+
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -1px) rotate(0deg); }
+        }
+
+        .duo-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .monitor {
+            background: #0d1117;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid var(--accent);
+            text-align: center;
+        }
+
+        .monitor h3 { color: var(--accent); margin-top: 0; }
+
+        .shame-evidence {
+            text-align: center;
+            margin: 20px 0;
+            border: 1px solid #30363d;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .shame-evidence img {
+            width: 100%;
+            border-radius: 5px;
+            opacity: 0.7;
+        }
+
+        .quote {
+            font-style: italic;
+            color: #8b949e;
+            border-left: 4px solid var(--accent);
+            padding-left: 15px;
+            margin: 20px 0;
+            font-size: 1.1em;
+        }
+
+        .action-btn {
+            display: block;
+            width: 100%;
+            padding: 20px;
+            background: var(--success);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .action-btn:hover { background: #2ea043; transform: scale(1.02); }
+
+        .sidebar-list {
+            font-size: 0.8em;
+            color: #484f58;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="bunker">
+    <div class="status-bar">
+        CÒN 33 PHÚT! DẬY NGAY KHÁNH BẰNG!!!
+    </div>
+
+    <div class="duo-box">
+        <div class="monitor">
+            <h3>TẠ TÙNG DƯƠNG</h3>
+            <p>Trực mạn trái</p>
+            <p><i>"Dậy chưa Bằng? Laptop mở sẵn rồi, đừng để tôi phải dựng giường dậy!"</i></p>
+        </div>
+        <div class="monitor">
+            <h3>TẠ THU HẬU</h3>
+            <p>Trực mạn phải</p>
+            <p><i>"Cả một hội đồng 13 người đang soi đấy, không trốn được đâu!"</i></p>
+        </div>
+    </div>
+
+    <div class="quote">
+        "Ngủ cùng không phải để nghỉ ngơi, ngủ cùng là để đảm bảo 9:30 AM ông phải có mặt trên bảng xếp hạng Leetcode."
+    </div>
+
+    <div class="shame-evidence">
+        <img src="Unparticipated contests.png" alt="Thảm họa 0/4">
+        <p style="color: var(--warning); font-size: 0.9em; margin-top: 5px;">Hải, Mạnh và 13 cao thủ khác đang nhìn vào cái hình này để chờ xem ông có làm lại cuộc đời không đấy!</p>
+    </div>
+
+    <button class="action-btn" onclick="alert('Dương và Hậu đã xác nhận bạn đã tỉnh táo! Chúc may mắn với Weekly Contest 2026!')">
+        ĐÃ TỈNH TÁO - SẴN SÀNG CHIẾN!
+    </button>
+
+    <div class="sidebar-list">
+        Đang đồng giám sát từ xa: Hưng, Trung, Minh, Bảo, Trung (V), Hiệp, Quân, Hoàng, Chinh, Đích, Thanh, Quốc, Hiếu.
+    </div>
+</div>
+
+</body>
+</html>

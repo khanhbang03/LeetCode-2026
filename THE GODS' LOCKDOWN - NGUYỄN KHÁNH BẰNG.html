@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE GODS' LOCKDOWN - NGUYỄN KHÁNH BẰNG</title>
+    <style>
+        :root {
+            --god-red: #ff0000;
+            --legendary-rank: #ff4500;
+            --code-bg: #0b0e14;
+            --matrix-green: #00ff41;
+        }
+
+        body {
+            font-family: 'Fira Code', 'Courier New', monospace;
+            background-color: var(--code-bg);
+            color: #fff;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            border: 20px solid var(--god-red);
+            overflow-x: hidden;
+        }
+
+        .olympus {
+            width: 95%;
+            max-width: 1000px;
+            background: rgba(0, 0, 0, 0.95);
+            padding: 50px;
+            box-shadow: 0 0 200px rgba(255, 0, 0, 0.5);
+            text-align: center;
+            position: relative;
+        }
+
+        .header-gods {
+            border-bottom: 4px double var(--god-red);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        .header-gods h1 {
+            font-size: 3.5em;
+            margin: 0;
+            letter-spacing: 10px;
+            text-shadow: 0 0 20px var(--god-red);
+        }
+
+        .god-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+
+        .god-name {
+            background: #222;
+            padding: 10px;
+            border: 1px solid var(--legendary-rank);
+            font-size: 0.8em;
+            color: var(--legendary-rank);
+            font-weight: bold;
+        }
+
+        .ultimatum-text {
+            font-size: 1.4em;
+            color: var(--matrix-green);
+            line-height: 1.6;
+            background: rgba(0, 255, 65, 0.05);
+            padding: 20px;
+            border-left: 10px solid var(--matrix-green);
+            text-align: left;
+            margin: 30px 0;
+        }
+
+        .shame-display {
+            filter: invert(1) hue-rotate(180deg);
+            opacity: 0.8;
+            margin: 20px 0;
+        }
+
+        .shame-display img {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .btn-virtual {
+            display: block;
+            width: 100%;
+            padding: 30px;
+            background: var(--god-red);
+            color: white;
+            font-size: 2em;
+            font-weight: 900;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 0 50px var(--god-red);
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+
+        .council-footer {
+            margin-top: 40px;
+            font-size: 0.7em;
+            color: #555;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="olympus">
+    <div class="header-gods">
+        <h1>GODS ARE AWAKE</h1>
+        <p>Current Target: Nguyễn Khánh Bằng | Status: Forced Virtual Participation</p>
+    </div>
+
+    <div class="god-grid">
+        <div class="god-name">jiangly</div>
+        <div class="god-name">Benq</div>
+        <div class="god-name">ecnerwala</div>
+        <div class="god-name">maroonrk</div>
+        <div class="god-name">Um_nik</div>
+        <div class="god-name">ko_osaga</div>
+        <div class="god-name">gamegame</div>
+        <div class="god-name">Radewoosh</div>
+        <div class="god-name">Endagorion</div>
+        <div class="god-name">Javokher</div>
+    </div>
+
+    <div class="ultimatum-text">
+        > TRẠNG THÁI: 10 huyền thoại đang ngồi quanh giường bạn.<br>
+        > THÔNG ĐIỆP TỪ UM_NIK: "Stop making excuses. Rating is temporary, discipline is forever."<br>
+        > THÔNG ĐIỆP TỪ JIANGLY: "I solved all problems in 10 mins. You have 90 mins for Virtual Contest. Start now."
+    </div>
+
+    <div class="shame-display">
+        <img src="Unparticipated contests.png" alt="Thảm họa 0/4">
+        <p style="color: white; font-weight: bold; font-size: 1.2em;">BỨC ẢNH NÀY SẼ LÀM CÁC VỊ THẦN NỔ GIẬN!</p>
+    </div>
+
+    <button class="btn-virtual" onclick="window.location.href='https://leetcode.com/contest/'">
+        VIRTUAL CONTEST NGAY (LỆNH TỐI CAO)
+    </button>
+
+    <div class="council-footer">
+        <div>Hội đồng Việt Nam (40+ Members)</div>
+        <div>Liên minh Showbiz & Hậu phương</div>
+        <div>Huyền thoại Tourist & Mehta Bros</div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HỘI ĐỒNG THẨM ĐỊNH TỐI CAO - KHÁNH BẰNG</title>
+    <style>
+        :root {
+            --academic-blue: #1a365d;
+            --ivory: #ffffff;
+            --gold: #c5a059;
+            --red-alert: #e53e3e;
+        }
+
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: #f4f4f4;
+            color: var(--academic-blue);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .academic-hall {
+            width: 95%;
+            max-width: 850px;
+            background: var(--ivory);
+            border: 4px solid var(--academic-blue);
+            padding: 40px;
+            box-shadow: 0 0 50px rgba(0,0,0,0.2);
+            position: relative;
+        }
+
+        .seal {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 80px;
+            height: 80px;
+            border: 2px solid var(--red-alert);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--red-alert);
+            font-weight: bold;
+            transform: rotate(15deg);
+            font-size: 0.8em;
+            text-align: center;
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .council-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .faculty-card {
+            background: #f8fafc;
+            padding: 15px;
+            border: 1px solid #e2e8f0;
+            border-left: 5px solid var(--gold);
+        }
+
+        .faculty-card h3 {
+            margin: 0;
+            font-size: 1.1em;
+            color: var(--academic-blue);
+        }
+
+        .faculty-card p {
+            font-style: italic;
+            font-size: 0.9em;
+            margin-top: 8px;
+            color: #4a5568;
+        }
+
+        .time-critical {
+            background: var(--red-alert);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5em;
+            margin-bottom: 25px;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.8; }
+            100% { opacity: 1; }
+        }
+
+        .evidence-photo {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .evidence-photo img {
+            width: 80%;
+            filter: sepia(30%) grayscale(50%);
+            border: 1px solid #ccc;
+        }
+
+        .btn-promise {
+            display: block;
+            width: 100%;
+            padding: 20px;
+            background: var(--academic-blue);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.3em;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-promise:hover {
+            background: #2c5282;
+        }
+
+        .footer-signatures {
+            margin-top: 20px;
+            font-size: 0.7em;
+            text-align: center;
+            color: #718096;
+        }
+    </style>
+</head>
+<body>
+
+<div class="academic-hall">
+    <div class="seal">KHẨN CẤP<br>PHÊ DUYỆT</div>
+    
+    <div class="header">
+        <h1>NGHỊ QUYẾT KỶ LUẬT 2026</h1>
+        <p>Hội đồng Giám sát: Tri thức - Tài năng - Đẳng cấp</p>
+    </div>
+
+    <div class="time-critical">
+        CÒN 240 GIÂY CUỐI CÙNG!
+    </div>
+
+    <div class="council-grid">
+        <div class="faculty-card">
+            <h3>Cô An An Trần & Thầy Nguyễn Thành Công</h3>
+            <p>"Thành công không đến từ những giấc ngủ dài, Bằng ạ. Chúng tôi đang chờ xem bản lĩnh thực sự của em!"</p>
+        </div>
+        <div class="faculty-card">
+            <h3>Thầy Phạm Minh Phương & Thầy Abhijit Dasgupta</h3>
+            <p>"Learning is a marathon. Missing a contest is missing an opportunity to grow. Submit at least one problem, now!"</p>
+        </div>
+        <div class="faculty-card">
+            <h3>Anh Nguyễn Văn Bằng & Lê Duy Đức</h3>
+            <p>"Cùng tên Bằng mà sao anh thấy lo cho em quá. Dậy đi em, Đức cũng đang đợi em trên bảng xếp hạng kìa!"</p>
+        </div>
+        <div class="faculty-card">
+            <h3>Lee Min Hoo</h3>
+            <p>"Visual hay tài năng đều cần kỷ luật. Đừng để hình ảnh 'ngôi sao' của bạn bị lu mờ bởi sự lười biếng!"</p>
+        </div>
+    </div>
+
+    <div class="evidence-photo">
+        <img src="Unparticipated contests.png" alt="Thành tích cần xem xét">
+        <p style="font-size: 0.8em; color: #a0aec0;">HỒ SƠ LƯU TRỮ: THIẾU SÓT TRONG KỶ LUẬT THI CỬ</p>
+    </div>
+
+    <button class="btn-promise" onclick="window.location.href='https://leetcode.com/contest/'">
+        XÁC NHẬN CHẤP HÀNH VÀ NỘP BÀI (4 PHÚT)
+    </button>
+
+    <div class="footer-signatures">
+        Lệnh được thi hành với sự chứng kiến của: Hội đồng Minh-Trinh-Tiến, Gia đình & Hậu phương, Liên quân Showbiz và 50+ cao thủ CP toàn cầu.
+    </div>
+</div>
+
+</body>
+</html>

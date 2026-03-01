@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐẠI HỘI KỶ LUẬT - NGUYỄN KHÁNH BẰNG</title>
+    <style>
+        :root {
+            --bg: #0f0f0f;
+            --panel: #1e1e1e;
+            --gold: #ffd700;
+            --red: #ff4d4d;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--white);
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .war-room {
+            max-width: 900px;
+            background: var(--panel);
+            border: 2px solid var(--gold);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 0 50px rgba(255, 215, 0, 0.2);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 1px solid #444;
+            padding-bottom: 20px;
+        }
+
+        .emergency-timer {
+            background: var(--red);
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 1.2em;
+            border-radius: 5px;
+            margin: 20px 0;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+
+        .council-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 10px;
+            margin: 20px 0;
+            font-size: 0.9em;
+        }
+
+        .member {
+            background: #2a2a2a;
+            padding: 8px 12px;
+            border-left: 3px solid var(--gold);
+            border-radius: 4px;
+        }
+
+        .shame-zone {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px 0;
+        }
+
+        .shame-zone img {
+            width: 80%;
+            border-radius: 10px;
+            filter: grayscale(50%);
+            transition: 0.3s;
+        }
+
+        .shame-zone img:hover {
+            filter: grayscale(0%);
+        }
+
+        .ultimatum {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px dashed var(--gold);
+        }
+
+        .btn-action {
+            display: block;
+            width: 100%;
+            padding: 20px;
+            background: var(--gold);
+            color: black;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 30px;
+            cursor: pointer;
+        }
+
+        .footer-note {
+            text-align: center;
+            color: #888;
+            font-style: italic;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="war-room">
+    <div class="header">
+        <h1 style="color: var(--gold); margin: 0;">LỆNH TỔNG ĐỘNG VIÊN 2026</h1>
+        <p>Đơn vị: Liên minh Competitive Programming Việt Nam</p>
+    </div>
+
+    <div class="emergency-timer">
+        CẢNH BÁO: CHỈ CÒN 36 PHÚT ĐẾN WEEKLY CONTEST! KHÁNH BẰNG ĐÂU?
+    </div>
+
+    <div class="ultimatum">
+        <p><strong>Gửi Nguyễn Khánh Bằng,</strong></p>
+        <p>Chúng tôi, những người ký tên dưới đây, không chấp nhận bất kỳ lý do nào cho việc bỏ thi nữa. Nhìn vào cái bảng 0/4 kia đi, nó là một sự lãng phí tài năng!</p>
+        
+        <div class="council-grid">
+            <div class="member">Trịnh Ngọc Hưng</div>
+            <div class="member">Nguyễn Ngọc Trung</div>
+            <div class="member">Lương Hiền Minh</div>
+            <div class="member">Lê Văn Bảo</div>
+            <div class="member">Trần Văn Trung</div>
+            <div class="member">Hoàng Nghĩa Hiệp</div>
+            <div class="member">Vũ Thanh Quân</div>
+            <div class="member">Lê Minh Hoàng</div>
+            <div class="member">Chinh Nguyễn Thị</div>
+            <div class="member">Đặng Xuân Đích</div>
+            <div class="member">Đinh Văn Thanh</div>
+            <div class="member">Nguyễn Trần Nhật Quốc</div>
+            <div class="member">Nghiêm Minh Hiếu</div>
+        </div>
+
+        <p style="text-align: center; font-weight: bold;">"Nếu Bằng không tham gia, chúng tôi sẽ đến tận nhà gõ cửa!"</p>
+    </div>
+
+    <div class="shame-zone">
+        <img src="Unparticipated contests.png" alt="Bằng chứng vắng mặt">
+        <p style="color: var(--red); font-weight: bold; margin-top: 10px;">Dòng thời gian của sự lười biếng - PHẢI CHẤM DỨT TỪ HÔM NAY!</p>
+    </div>
+
+    <div style="display: flex; gap: 20px;">
+        <div style="flex: 1; text-align: center; border: 1px solid #444; padding: 10px;">
+            <h3 style="color: var(--gold);">Thứ 7 (21:30)</h3>
+            <p>Hưng, Trung, Minh, Bảo, Trung, Hiệp, Quân trực chiến!</p>
+        </div>
+        <div style="flex: 1; text-align: center; border: 1px solid #444; padding: 10px;">
+            <h3 style="color: var(--gold);">Chủ Nhật (09:30)</h3>
+            <p>Hoàng, Chinh, Đích, Thanh, Quốc, Hiếu áp giải thi đấu!</p>
+        </div>
+    </div>
+
+    <button class="btn-action" onclick="alert('Lệnh thi đấu đã được kích hoạt! 13 con mắt đang theo dõi bạn. VÀO LEETCODE NGAY!')">
+        TÔI CHẤP HÀNH MỆNH LỆNH!
+    </button>
+
+    <p class="footer-note">Đã được phê duyệt bởi Hội đồng Kỷ luật Thép 2026</p>
+</div>
+
+</body>
+</html>

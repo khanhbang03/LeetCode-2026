@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HỆ THỐNG GIÁM SÁT KỶ LUẬT 2026</title>
+    <style>
+        :root {
+            --professional-blue: #2c3e50;
+            --urgent-red: #e74c3c;
+            --expert-gold: #f1c40f;
+            --bg-gray: #ecf0f1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-gray);
+            color: var(--professional-blue);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .hq-base {
+            width: 95%;
+            max-width: 800px;
+            background: white;
+            border: 2px solid var(--professional-blue);
+            box-shadow: 20px 20px 0px var(--professional-blue);
+            padding: 40px;
+            position: relative;
+        }
+
+        .header-panel {
+            border-bottom: 5px solid var(--professional-blue);
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+        }
+
+        .header-panel h1 {
+            margin: 0;
+            font-size: 2em;
+            text-transform: uppercase;
+            color: var(--professional-blue);
+        }
+
+        .expert-council {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .expert-card {
+            background: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-left: 8px solid var(--professional-blue);
+        }
+
+        .expert-card.urgent { border-left-color: var(--urgent-red); }
+
+        .expert-card h3 {
+            margin-top: 0;
+            font-size: 1.1em;
+            color: var(--professional-blue);
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        .expert-card p {
+            font-style: italic;
+            font-size: 0.9em;
+            margin-top: 10px;
+            line-height: 1.4;
+        }
+
+        .status-alert {
+            background: var(--urgent-red);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.3em;
+            margin: 20px 0;
+            text-transform: uppercase;
+            animation: flash 1s infinite;
+        }
+
+        @keyframes flash {
+            50% { background: var(--professional-blue); }
+        }
+
+        .evidence-box {
+            text-align: center;
+            margin: 20px 0;
+            background: #eee;
+            padding: 10px;
+        }
+
+        .evidence-box img {
+            width: 100%;
+            max-width: 550px;
+            filter: grayscale(100%) contrast(1.5);
+        }
+
+        .btn-submit {
+            display: block;
+            width: 100%;
+            padding: 20px;
+            background: var(--professional-blue);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.5em;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-submit:hover {
+            background: #1a252f;
+            letter-spacing: 2px;
+        }
+
+        .footer-log {
+            margin-top: 20px;
+            font-size: 0.7em;
+            color: #7f8c8d;
+            text-align: center;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hq-base">
+    <div class="header-panel">
+        <h1>BÁO CÁO KỶ LUẬT TẬP TRUNG</h1>
+        <p>Giám sát viên: Minh (x2), Phoebe Hansen, Minh Tiến</p>
+    </div>
+
+    <div class="status-alert">
+        CÒN 8 PHÚT: TIẾN ĐỘ HIỆN TẠI 0% - KHÔNG THỂ CHẤP NHẬN!
+    </div>
+
+    <div class="expert-council">
+        <div class="expert-card">
+            <h3>Anh Nguyễn Nhật Minh & Anh Trần Nhật Minh</h3>
+            <p>"Bằng ơi, làm việc là phải có hệ thống. Cái bảng 0/4 kia là lỗi hệ thống cực kỳ nghiêm trọng. Dậy fix bug lười biếng ngay lập tức!"</p>
+        </div>
+        <div class="expert-card urgent">
+            <h3>Chị Trinh (Phoebe Hansen)</h3>
+            <p>"No more excuses, Bằng. I want to see your name on that leaderboard. High standards require high discipline. Get to work!"</p>
+        </div>
+        <div class="expert-card">
+            <h3>Trần Sỹ Minh Tiến</h3>
+            <p>"Sỹ khí đâu rồi Bằng? Tiến lên chứ không được lùi! 8 phút là đủ để làm một cú lội ngược dòng. Đừng để anh em phải thất vọng!"</p>
+        </div>
+    </div>
+
+    <div class="evidence-box">
+        <img src="Unparticipated contests.png" alt="Thành tích 0/4">
+        <p style="font-size: 0.8em; color: #555;">DỮ LIỆU ĐANG ĐƯỢC PHÂN TÍCH BỞI HỘI ĐỒNG GIÁM SÁT</p>
+    </div>
+
+    <button class="btn-submit" onclick="window.location.href='https://leetcode.com/contest/'">
+        XÁC NHẬN VÀO TRẬN (8 PHÚT CUỐI)
+    </button>
+
+    <div class="footer-log">
+        LOG_ID: 2026_LEETCODE_EMERGENCY | CC: Annie, Hà Dung, Phương Anh, Diệu Linh, Đông Thy, HIEUTHUHAI, Sơn Tùng M-TP, Mehta Brothers, Global Experts, 40+ Members.
+    </div>
+</div>
+
+</body>
+</html>

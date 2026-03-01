@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giải Cứu Khánh Bằng - Leetcode 2026</title>
+    <style>
+        :root {
+            --leetcode-bg: #1a1a1a;
+            --leetcode-panel: #282828;
+            --leetcode-orange: #ffa116;
+            --leetcode-blue: #0a84ff;
+            --leetcode-green: #30d158;
+            --text-main: #eff2f6;
+            --text-muted: #8a8a8a;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--leetcode-bg);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            background-color: var(--leetcode-panel);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            margin: 20px;
+            border-top: 5px solid var(--leetcode-blue);
+        }
+
+        h1 {
+            color: var(--leetcode-blue);
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 0;
+            font-size: 2em;
+        }
+
+        .chat-box {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid var(--leetcode-orange);
+        }
+
+        .message {
+            margin-bottom: 15px;
+        }
+
+        .message:last-child {
+            margin-bottom: 0;
+        }
+
+        .sender-hai {
+            color: var(--leetcode-orange);
+            font-weight: bold;
+        }
+
+        .sender-manh {
+            color: var(--leetcode-green);
+            font-weight: bold;
+        }
+
+        .shame-board {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background-color: rgba(255, 77, 77, 0.05);
+            border-radius: 8px;
+        }
+
+        .shame-board img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid #ff4d4d;
+        }
+
+        .shame-caption {
+            color: #ff4d4d;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        .schedule {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 30px 0;
+            gap: 20px;
+        }
+
+        .schedule-card {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            flex: 1;
+            min-width: 250px;
+            border: 1px solid #444;
+            transition: transform 0.2s;
+        }
+
+        .schedule-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--leetcode-blue);
+        }
+
+        .schedule-card h3 {
+            margin-top: 0;
+            color: var(--text-main);
+            font-size: 1.3em;
+        }
+
+        .time {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin: 10px 0;
+            color: var(--leetcode-orange);
+        }
+
+        .urgent-alert {
+            background-color: rgba(255, 77, 77, 0.2);
+            color: #ff4d4d;
+            padding: 10px;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+            border: 1px solid #ff4d4d;
+            animation: blink 2s infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0.7; }
+        }
+
+        .btn-accept {
+            background-color: var(--leetcode-blue);
+            color: #fff;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.2s, transform 0.1s;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .btn-accept:hover {
+            background-color: #0066cc;
+        }
+
+        .btn-accept:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Chiến Dịch Gõ Đầu Khánh Bằng</h1>
+        
+        <div class="urgent-alert">
+            CẢNH BÁO: Hôm nay là Chủ Nhật, 1/3/2026. Weekly Contest sẽ bắt đầu lúc 9:30 AM. Dậy ngay!!!
+        </div>
+
+        <div class="chat-box">
+            <div class="message">
+                <span class="sender-hai">Phạm Hoàng Hải:</span> "Bằng ơi, giải thích xem nào? Anh em check profile thấy cả một dàn contest đỏ lòm 0/4 với thời gian 00:00:00 là sao? Lại mải đi chơi tối thứ 7 và ngủ nướng sáng Chủ nhật đúng không?"
+            </div>
+            <div class="message">
+                <span class="sender-manh">Trần Đức Mạnh:</span> "Ông định để acc Leetcode mốc meo đến bao giờ? Tài năng mà không có kỷ luật thì vứt nhé. Hai bọn tôi thống nhất rồi, từ tuần này, đến giờ thi là sẽ gọi điện cháy máy, spam tin nhắn cho đến khi ông ngồi vào bàn mở laptop lên thì thôi!"
+            </div>
+        </div>
+
+        <div class="shame-board">
+            <img src="Unparticipated contests.png" alt="Thực trạng bỏ thi Leetcode">
+            <div class="shame-caption">Bằng chứng không thể chối cãi. Đã đến lúc phải thay đổi!</div>
+        </div>
+
+        <h2 style="text-align: center; border-bottom: 2px solid #444; padding-bottom: 10px;">LỊCH TRÌNH BỊ ÉP BUỘC</h2>
+
+        <div class="schedule">
+            <div class="schedule-card">
+                <h3>Biweekly Contest</h3>
+                <div class="time">21:30</div>
+                <p>Tối Thứ 7 hàng tuần</p>
+                <p style="color: var(--text-muted); font-size: 0.9em;">(Hải & Mạnh sẽ bắt đầu spam tin nhắn từ 21:15)</p>
+            </div>
+            <div class="schedule-card">
+                <h3>Weekly Contest</h3>
+                <div class="time">09:30</div>
+                <p>Sáng Chủ Nhật hàng tuần</p>
+                <p style="color: var(--text-muted); font-size: 0.9em;">(Sẽ có cuộc gọi đánh thức lúc 09:00)</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <p style="font-size: 1.1em; font-style: italic; margin-bottom: 20px;">
+                "Tôi, Nguyễn Khánh Bằng, xin hứa với Hải và Mạnh sẽ bật máy tính đúng giờ, không AFK, không bỏ cuộc giữa chừng!"
+            </p>
+            <button class="btn-accept" onclick="alert('Đã ghi nhận cam kết! Hải và Mạnh đang nhìn bạn đấy. Mở tab Leetcode lên chuẩn bị thi ngay đi, 9:30 rồi!')">
+                KÝ HIỆP ƯỚC THI ĐẤU
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>

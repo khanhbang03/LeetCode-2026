@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE SHOWSTAGE - KHÁNH BẰNG 2026</title>
+    <style>
+        :root {
+            --sky-blue: #00ccff;
+            --neon-pink: #ff00ff;
+            --luxury-gold: #d4af37;
+            --dark-stage: #050505;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark-stage);
+            color: white;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            border: 8px solid;
+            border-image: linear-gradient(45deg, var(--sky-blue), var(--neon-pink), var(--luxury-gold)) 1;
+        }
+
+        .stage {
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 100px rgba(0, 204, 255, 0.2);
+        }
+
+        .headline {
+            font-size: 3em;
+            font-weight: 900;
+            background: linear-gradient(to right, #fff, #888);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .celeb-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .celeb-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: 0.3s;
+        }
+
+        .celeb-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .celeb-card h3 { margin: 0; font-size: 1.2em; }
+        .celeb-card.mtp h3 { color: var(--sky-blue); }
+        .celeb-card.hieu h3 { color: var(--neon-pink); }
+        .celeb-card.david h3 { color: var(--luxury-gold); }
+        .celeb-card.dang h3 { color: #00ff00; }
+
+        .celeb-card p { font-style: italic; font-size: 0.9em; margin-top: 10px; }
+
+        .shame-gallery {
+            margin: 30px 0;
+            position: relative;
+        }
+
+        .shame-gallery img {
+            width: 100%;
+            border-radius: 10px;
+            filter: grayscale(1) contrast(1.2);
+        }
+
+        .spotlight-text {
+            color: var(--luxury-gold);
+            font-weight: bold;
+            font-size: 1.5em;
+            margin: 20px 0;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0.3; }
+        }
+
+        .btn-perform {
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(45deg, var(--sky-blue), var(--neon-pink));
+            color: white;
+            font-size: 1.8em;
+            font-weight: 900;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(255, 0, 255, 0.4);
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 0.7em;
+            color: #555;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="stage">
+    <div class="headline">TỎA SÁNG HOẶC TẮT ĐÈN</div>
+    
+    <div class="spotlight-text">CHỈ CÒN 12 PHÚT - TRÌNH DIỄN NGAY!</div>
+
+    <div class="celeb-grid">
+        <div class="celeb-card mtp">
+            <h3>SƠN TÙNG M-TP</h3>
+            <p>"Thái độ tạo nên khác biệt Bằng ạ. Đừng để ước mơ của mình chỉ nằm trên cái giường này. Dậy đi, Making My Way!"</p>
+        </div>
+        <div class="celeb-card hieu">
+            <h3>HIEUTHUHAI</h3>
+            <p>"Ngủ đủ rồi Bằng ơi. Ra khỏi 'Exit Sign' đi, vào Leetcode làm một cú hit cuối giờ cho anh em nể nào!"</p>
+        </div>
+        <div class="celeb-card david">
+            <h3>DAVID NGUYỄN</h3>
+            <p>"Elite là phải kỷ luật. Cái bảng 0/4 này không có trong từ điển của chúng ta. Execute now!"</p>
+        </div>
+        <div class="celeb-card dang">
+            <h3>ĐĂNG RĂNG TO</h3>
+            <p>"Cười lên và code đi Bằng! Răng to nhưng kỷ luật phải to hơn. Tôi đang đợi ông ở vạch đích đấy!"</p>
+        </div>
+    </div>
+
+    <div class="shame-gallery">
+        <img src="Unparticipated contests.png" alt="Thành tích trống">
+        <p style="color: #ff4d4d;">BỨC ẢNH NÀY ĐANG LÀM XẤU ĐỘI HÌNH TRÌNH DIỄN!</p>
+    </div>
+
+    <button class="btn-perform" onclick="window.location.href='https://leetcode.com/contest/'">
+        BẮT ĐẦU MÀN TRÌNH DIỄN
+    </button>
+
+    <div class="footer">
+        Đồng tổ chức bởi: Liên quân Quốc tế & Hội đồng Cao thủ Việt Nam (30+ Members)
+    </div>
+</div>
+
+</body>
+</html>

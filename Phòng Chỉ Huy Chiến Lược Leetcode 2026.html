@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phòng Chỉ Huy Chiến Lược Leetcode 2026</title>
+    <style>
+        :root {
+            --leetcode-bg: #1a1a1a;
+            --leetcode-panel: #282828;
+            --leetcode-orange: #ffa116;
+            --leetcode-blue: #0a84ff;
+            --text-main: #eff2f6;
+            --text-muted: #8a8a8a;
+            --war-red: #ff4d4d;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--leetcode-bg);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .war-room {
+            max-width: 1000px;
+            background-color: var(--leetcode-panel);
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            margin: 20px;
+            border-top: 5px solid var(--war-red);
+            position: relative;
+        }
+
+        h1 {
+            color: var(--war-red);
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 0;
+            font-size: 2.2em;
+        }
+
+        .countdown-alert {
+            background-color: rgba(255, 77, 77, 0.1);
+            color: var(--war-red);
+            padding: 10px;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+            border: 1px solid var(--war-red);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.02); opacity: 0.8; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .council-messages {
+            background-color: rgba(10, 132, 255, 0.1);
+            border-left: 4px solid var(--leetcode-blue);
+            padding: 20px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        .msg-section {
+            margin-bottom: 15px;
+        }
+
+        .msg-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .sender {
+            font-weight: bold;
+            color: var(--leetcode-orange);
+        }
+
+        .cp-team-msg .sender { color: var(--leetcode-blue); }
+        .business-celebrity-msg .sender { color: var(--war-red); }
+
+        .shame-evidence {
+            text-align: center;
+            margin: 30px 0;
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .shame-evidence img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 2px solid #ff4d4d;
+        }
+
+        .shame-caption {
+            color: #ff4d4d;
+            font-weight: bold;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+
+        .schedule {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 30px 0;
+            gap: 20px;
+        }
+
+        .schedule-card {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            flex: 1;
+            min-width: 280px;
+            border: 1px solid #444;
+            transition: transform 0.2s;
+        }
+
+        .schedule-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--war-red);
+        }
+
+        .schedule-card h3 {
+            margin-top: 0;
+            color: var(--war-red);
+            font-size: 1.3em;
+        }
+
+        .time {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #fff;
+        }
+
+        .pledge {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+        }
+
+        .btn-confirm {
+            background-color: var(--war-red);
+            color: #000;
+            border: none;
+            padding: 18px 50px;
+            font-size: 1.3em;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        .btn-confirm:hover {
+            background-color: #ffb84d;
+        }
+
+        .btn-confirm:active {
+            transform: scale(0.98);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="war-room">
+        <h1>CHIẾN DỊCH GIẢI CỨU KHÁNH BẰNG 2026</h1>
+        
+        <div class="countdown-alert">
+            CẢNH BÁO UỐNG TRÀ TRƯỚC GIỜ THI: CÒN 30 PHÚT ĐẾN WEEKLY CONTEST!
+        </div>
+
+        <div class="council-messages cp-team-msg">
+            <div class="msg-section">
+                <span class="sender">CP Team (Trần Phương Mai, Phạm Hà Phương, Sooryajith Yesodharan, Trần Đỗ Quyên, Bùi Huyền Mai, Prakriti Bhatia, Nian Li):</span> "Bằng ơi, chúng mình đã xem cái bảng này. Vẫn còn cả một chặng đường dài! Bọn mình không thể làm thay Bằng được, nhưng bọn mình sẽ ở đây để cùng Bằng AC từng bài một!"
+            </div>
+            <div class="msg-section">
+                <span class="sender">Shark Phạm Thanh Hưng & Shark Phú:</span> "Lập trình không chỉ là mã, nó là kỷ luật. Đầu tư vào bản thân là đầu tư lợi nhuận nhất. 20 phút mỗi tuần cho CP, Bằng có dám 'mở kèo' không?"
+            </div>
+            <div class="msg-section">
+                <span class="sender">Hoa hậu Mai Phương Thúy:</span> "Làm người có kỷ luật cũng là một nét đẹp. 2026, Bằng hãy là phiên bản 'đẹp' nhất của chính mình nhé!"
+            </div>
+            <div class="msg-section">
+                <span class="sender">Julian Fayad, Pratt Hieu, Tien Hung Nguyen, Tuan Thanh Nguyen:</span> "Bằng ơi, chúng mình tin Bằng. Giờ thi là phải thi, không có 'quay xe'! 2026 là của Bằng!"
+            </div>
+        </div>
+
+        <div class="council-messages business-celebrity-msg">
+            <div class="msg-section">
+                <span class="sender">MrBeast:</span> "Bằng, hãy nghĩ xem nếu 2026 cậu không miss bất kỳ contest nào, tôi sẽ 'giveaway' một cái gì đó cho cậu!"
+            </div>
+            <div class="msg-section">
+                <span class="sender">PewDiePie:</span> "Bro, kỷ luật không phải là thứ cậu tìm kiếm, đó là thứ cậu xây dựng. 2026, hãy là một 'kỷ luật thép'!"
+            </div>
+            <div class="msg-section">
+                <span class="sender">MarziaPie:</span> "Cố lên Bằng! Kỷ luật không có giờ giải lao, nhưng nó mang lại niềm vui."
+            </div>
+            <div class="msg-section">
+                <span class="sender">Jenny Huỳnh:</span> "Kỷ luật thép để trở thành ngôi sao 2026! 1 contest/week thôi mà, Bằng làm được!"
+            </div>
+            <div class="msg-section">
+                <span class="sender">Gennady Korotkevich:</span> "0/4 không phải là cái kết, đó là lời mở đầu. 2026, hãy cho thế giới thấy kỷ luật của Nguyễn Khánh Bằng!"
+            </div>
+        </div>
+
+        <div class="shame-evidence">
+            <img src="Unparticipated contests.png" alt="Bằng chứng bỏ thi Leetcode">
+            <div class="shame-caption">Thực trạng cần thay đổi! Đã đến lúc nói không với miss!</div>
+        </div>
+
+        <h2 style="text-align: center; border-bottom: 2px solid #444; padding-bottom: 10px;">LỊCH TRÌNH KHẨN CẤP ĐỂ TRỞ THÀNH NGÔI SAO 2026</h2>
+
+        <div class="schedule">
+            <div class="schedule-card">
+                <h3>Thứ 7</h3>
+                <div class="time">21:30</div>
+                <p>BIWEEKLY CONTEST<br>(Giờ Việt Nam)</p>
+            </div>
+            <div class="schedule-card">
+                <h3>Chủ nhật</h3>
+                <div class="time">09:30</div>
+                <p>WEEKLY CONTEST<br>(Giờ Việt Nam)</p>
+            </div>
+        </div>
+
+        <div class="pledge">
+            <p style="font-size: 1.2em; margin-bottom: 20px;">
+                "Tôi, Nguyễn Khánh Bằng, cam kết với 'Hội đồng Liên minh' sẽ có mặt đúng giờ, gõ code đúng kỷ luật thép và không bỏ miss một contest nào trong năm 2026!"
+            </p>
+            <button class="btn-confirm" onclick="alert('Xác nhận kỷ luật thép! 2026 không có miss. Vào thi ngay đi Bằng ơi!')">
+                TÔI XIN THỀ SẼ THI ĐẤU!
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>

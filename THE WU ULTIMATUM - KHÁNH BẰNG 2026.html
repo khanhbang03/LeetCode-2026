@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE WU ULTIMATUM - KHÁNH BẰNG 2026</title>
+    <style>
+        :root {
+            --wu-crimson: #990000;
+            --wu-gold: #ffcc00;
+            --deep-space: #050505;
+            --code-white: #e6edf3;
+        }
+
+        body {
+            font-family: 'Fira Code', monospace;
+            background-color: var(--deep-space);
+            color: var(--code-white);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            border: 15px solid var(--wu-crimson);
+        }
+
+        .war-room {
+            width: 90%;
+            max-width: 900px;
+            padding: 50px;
+            background: linear-gradient(145deg, #111, #000);
+            box-shadow: 0 0 100px rgba(153, 0, 0, 0.6);
+            text-align: center;
+            position: relative;
+        }
+
+        .wu-header {
+            border-bottom: 2px solid var(--wu-gold);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .wu-header h1 {
+            color: var(--wu-gold);
+            font-size: 3em;
+            margin: 0;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+        }
+
+        .legend-profile {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        .legend-card {
+            background: #1a1a1a;
+            padding: 25px;
+            border: 1px solid #333;
+            border-top: 5px solid var(--wu-gold);
+            text-align: left;
+        }
+
+        .legend-card h2 { color: var(--wu-gold); margin-top: 0; font-size: 1.5em; }
+        .legend-card p { font-style: italic; color: #ccc; font-size: 0.95em; line-height: 1.5; }
+
+        .shame-file {
+            margin: 30px 0;
+            border: 1px solid #444;
+            padding: 10px;
+            background: #000;
+        }
+
+        .shame-file img {
+            width: 100%;
+            opacity: 0.4;
+            filter: grayscale(100%) contrast(1.2);
+        }
+
+        .urgent-status {
+            font-size: 1.3em;
+            color: #ff3333;
+            background: rgba(255, 51, 51, 0.1);
+            padding: 15px;
+            border: 1px dashed #ff3333;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        .btn-action {
+            display: block;
+            width: 100%;
+            padding: 25px;
+            background: var(--wu-gold);
+            color: black;
+            font-size: 1.8em;
+            font-weight: 900;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+            text-transform: uppercase;
+        }
+
+        .btn-action:hover {
+            background: #fff;
+            box-shadow: 0 0 40px var(--wu-gold);
+        }
+
+        .council-footer {
+            margin-top: 40px;
+            font-size: 0.65em;
+            color: #555;
+            letter-spacing: 1px;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="war-room">
+    <div class="wu-header">
+        <h1>THE WU BROTHERS</h1>
+        <p>Strategic Oversight: Project Khanh Bang 2026</p>
+    </div>
+
+    <div class="legend-profile">
+        <div class="legend-card">
+            <h2>NEAL WU</h2>
+            <p>"Bang, competitive programming is a mind sport. You can't win if you don't show up. I'm waiting for your first submission."</p>
+        </div>
+        <div class="legend-card">
+            <h2>SCOTT WU</h2>
+            <p>"Speed is everything, but consistency is god-tier. Your 0/4 streak ends today. Open the Virtual Contest now."</p>
+        </div>
+    </div>
+
+    <div class="shame-file">
+        <img src="Unparticipated contests.png" alt="Evidence of Inactivity">
+        <p style="color: var(--wu-crimson); font-weight: bold; margin-top: 10px;">TARGET FAILED: 0 PROBLEMS SOLVED</p>
+    </div>
+
+    <div class="urgent-status">
+        CONTEST ENDED AT 11:00 AM. <br>
+        CURRENT MISSION: 90-MINUTE VIRTUAL RECOVERY.
+    </div>
+
+    <button class="btn-action" onclick="window.location.href='https://leetcode.com/contest/'">
+        START VIRTUAL CONTEST (BY ORDER OF WU)
+    </button>
+
+    <div class="council-footer">
+        IN COLLABORATION WITH: jiangly, Benq, tourist, Um_nik, MrBeast, PewDiePie, Jenny Huynh, Shark Hưng, Mai Phương Thúy, Thầy Công, Thầy Phương, Anh Hạnh, Chị Trinh, và 100+ cao thủ liên minh toàn cầu.
+    </div>
+</div>
+
+</body>
+</html>
